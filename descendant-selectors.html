@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>List Styles Example</title>
+</head>
+<style>
+    /* Apply a circle list style to top-level list items */
+    li {
+        list-style-type: circle;
+    }
+
+    /* Apply a disc list style to nested list items */
+    li li {
+        list-style-type: disc;
+    }
+</style>
+<body>
+    <!-- Display an unordered list with list items -->
+    <ul>
+        <!-- List item with a circle list style -->
+        <li>
+            <!-- Display a div element as part of the list item -->
+            <div>Element 1</div>
+            <!-- Nested unordered list with list items having a disc list style -->
+            <ul>
+                <li>sous-element A</li>
+                <li>sous-element B</li>
+            </ul>
+        </li>
+        
+        <!-- Another list item with a circle list style -->
+        <li>
+            <!-- Display another div element as part of the list item -->
+            <div>Element 2</div>
+            <!-- Another nested unordered list with list items having a disc list style -->
+            <ul>
+                <li>sous-element A</li>
+                <li>sous-element B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
